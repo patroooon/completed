@@ -2,61 +2,65 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CloudMove : MonoBehaviour
+
+namespace TestXlab
 {
-    public Transform cloud;
-    public GameObject rain;
-    public List<Transform> cloudPoints = new List<Transform>();
-    public float speed;
-    public float offsetYPosition;
-    public CloudMove cloudMove;
-    private bool isNeedToMove = false;
-    private int currentPointIndex = -1;
-    private const float error = 0.1f;
-    public void MoveToNextPoint()
+    public class CloudMove : MonoBehaviour
     {
-        if (currentPointIndex + 1 < cloudPoints.Count)
+        public Transform cloud;
+        public GameObject rain;
+        public List<Transform> cloudPoints = new List<Transform>();
+        public float speed;
+        public float offsetYPosition;
+        public CloudMove cloudMove;
+        public bool isNeedToMove = false;
+        public int currentPointIndex = -1;
+        public const float error = 0.1f;
+        public void MoveToNextPoint()
         {
-            currentPointIndex++;
-        }
-        else
-        {
-            currentPointIndex = 0;
-        }
-
-        isNeedToMove = true;
-        rain.SetActive(false);
-    }
-
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            cloudMove.MoveToNextPoint();
-        }
-
-        {
-            if (isNeedToMove == false)
-                return;
-
-            Vector3 targetPos = cloudPoints[currentPointIndex].position + new Vector3(0, offsetYPosition, 0);
-
-            Vector3 direction = targetPos - cloud.position;
-
-            if (Vector3.Distance(cloud.position, targetPos) > error)
+            if (currentPointIndex + 1 < cloudPoints.Count)
             {
-                cloud.Translate(direction * (speed * Time.deltaTime));
+                currentPointIndex++;
             }
             else
             {
-                isNeedToMove = false;
-                rain.SetActive(true);
+                currentPointIndex = 0;
             }
-    
+
+            isNeedToMove = true;
+            rain.SetActive(false);
         }
 
-       
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+               // cloudMove.MoveToNextPoint();
+            }
+
+            {
+                if (isNeedToMove == false)
+                    return;
+
+                Vector3 targetPos = cloudPoints[currentPointIndex].position + new Vector3(0, offsetYPosition, 0);
+
+                Vector3 direction = targetPos - cloud.position;
+
+                if (Vector3.Distance(cloud.position, targetPos) > error)
+                {
+                    cloud.Translate(direction * (speed * Time.deltaTime));
+                }
+                else
+                {
+                    isNeedToMove = false;
+                    rain.SetActive(true);
+                }
+
+            }
+
+
+        }
+
     }
-    
 }
