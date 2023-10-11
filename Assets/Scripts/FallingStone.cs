@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class FallingStone : MonoBehaviour
+namespace Golf
 {
-    public Rigidbody falling_stone;
-    public Transform Spawn;
+    public class FallingStone : MonoBehaviour
+    {
+        public Rigidbody falling_stone;
+        public Transform Spawn;
 
+    }
 }
