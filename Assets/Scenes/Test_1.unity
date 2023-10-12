@@ -14550,24 +14550,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 360315726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7bc35fffa7cba24ca703d765b5286e5, type: 3}
+  m_Script: {fileID: 11500000, guid: ff79afcba34247f4ebbccf04cea5f603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cloud: {fileID: 1022963113}
-  rain: {fileID: 735006996}
-  cloudPoints:
-  - {fileID: 1367782378}
-  - {fileID: 1659989085}
-  - {fileID: 6889718}
-  - {fileID: 648544553}
-  - {fileID: 1146574077}
-  - {fileID: 885835524}
-  - {fileID: 659539012}
-  speed: 1
-  offsetYPosition: 10
-  cloudMove: {fileID: 1022963119}
-  isNeedToMove: 0
-  currentPointIndex: -1
 --- !u!1001 &1024197818
 PrefabInstance:
   m_ObjectHideFlags: 0
