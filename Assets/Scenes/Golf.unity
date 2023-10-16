@@ -13439,8 +13439,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FallingStone: {fileID: 813299049}
-  delayMax: 2
-  delayMin: 0.5
+  delayMax: 4.09
+  delayMin: 0.72
   delayStep: 0.06
 --- !u!1 &1532381028 stripped
 GameObject:
@@ -16713,8 +16713,6 @@ GameObject:
   - component: {fileID: 350799693832700118}
   - component: {fileID: 6366487718508390524}
   - component: {fileID: 6366487718508390527}
-  - component: {fileID: 6366487718508390526}
-  - component: {fileID: 6366487718508390525}
   m_Layer: 0
   m_Name: VillagerPlow
   m_TagString: Respawn
@@ -19247,30 +19245,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 370782fdfcf1fbe42b2cd21bf23903dd, type: 3}
---- !u!114 &6366487718508390525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350799693830446614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69a8c63b842fd3d42a63d4a06225c764, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6366487718508390526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350799693830446614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acffcb9c319b1ce41a207a5d05a3f243, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6366487718508390527
 MonoBehaviour:
   m_ObjectHideFlags: 0
