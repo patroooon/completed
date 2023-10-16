@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4520999431459105080}
   - component: {fileID: 4534844551206802009}
   - component: {fileID: 4534844551206802008}
+  - component: {fileID: -6694440932106334835}
   m_Layer: 0
   m_Name: falling_stone
   m_TagString: Untagged
@@ -94,7 +95,7 @@ Rigidbody:
   m_GameObject: {fileID: 4533880500960037028}
   serializedVersion: 4
   m_Mass: 10
-  m_Drag: 1
+  m_Drag: 0.5
   m_AngularDrag: 1.76
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -133,3 +134,16 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.95
   m_Center: {x: 0.1051386, y: 0.25091583, z: 0.117384255}
+--- !u!114 &-6694440932106334835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533880500960037028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5583b24e012d840b6cdc683b76f1eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAfect: 0
