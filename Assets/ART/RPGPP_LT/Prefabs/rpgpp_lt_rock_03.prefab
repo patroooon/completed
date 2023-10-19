@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 499937462831522056}
   - component: {fileID: 8199131787872978238}
   - component: {fileID: -1301093030737097441}
+  - component: {fileID: -4833305539952548854}
   m_Layer: 0
   m_Name: rpgpp_lt_rock_03
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,3 +148,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAfect: 0
+--- !u!114 &-4833305539952548854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553163231892768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69e7c2ef01808444b36b2ec04867380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

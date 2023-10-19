@@ -32,10 +32,6 @@ namespace Golf
             m_stones.Clear();
         }
 
-        private void Awake()
-        {
-        }
-
         private void Start()
         {
             m_lastSpawnedTime = Time.time;

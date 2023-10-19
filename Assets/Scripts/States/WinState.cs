@@ -4,18 +4,17 @@ using UnityEngine;
 
 namespace Golf
 {
-    public class WinState : MonoBehaviour
+    public class WinState : GameState
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+        public GameState mainMenuState;
+        public LevelController levelController;
 
-        // Update is called once per frame
-        void Update()
+        public void Restart()
         {
-        
+            levelController.ClearStones();
+
+            Exit();
+            mainMenuState.Enter();
         }
     }
 }

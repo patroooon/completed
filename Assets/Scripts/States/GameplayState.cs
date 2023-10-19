@@ -11,6 +11,7 @@ namespace Golf
         public PlayerController playerController;
         public GameState gameOverState;
         public TMP_Text scoreText;
+        public WinState winState;
 
         protected override void OnEnable()
         {
@@ -23,6 +24,8 @@ namespace Golf
             GameEvents.onStickHit += OnStickHit;
 
             OnStickHit();
+
+            GameEvents.onStoneInHole += OnWin;
         }
 
         private void OnStickHit()
@@ -36,11 +39,18 @@ namespace Golf
             gameOverState.Enter();
         }
 
+        private void OnWin()
+        {
+            Exit();
+            winState.Enter();
+        }
+
         protected override void OnDisable()
         {
             base.OnDisable();
 
             GameEvents.onCollisionStones -= OnGameOver;
+            GameEvents.onStoneInHole -= OnWin;
 
             levelController.enabled = false;
             playerController.enabled = false;
