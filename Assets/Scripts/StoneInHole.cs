@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing.Text;
 using UnityEngine;
 
 namespace Golf
@@ -11,9 +12,8 @@ namespace Golf
         {
             if (collision.gameObject.CompareTag("Finish") && gameObject.CompareTag("Respawn"))
             {
-                
-                    Debug.Log("Победа!");
-                }
+                GameEvents.StoneInHole(collision);
+            }
                 
             }
         }

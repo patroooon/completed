@@ -21,7 +21,7 @@ namespace Golf
             onStickHit?.Invoke();
         } 
 
-        public static void StoneInHole()
+        public static void StoneInHole(Collision collision)
         {
             onStoneInHole?.Invoke();
         }
